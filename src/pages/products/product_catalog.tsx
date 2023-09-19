@@ -118,8 +118,8 @@ const ProductCatalog = () => {
 
       {currentProducts.length > 0 ? (
         <Grid container spacing={3}>
-          {currentProducts.map((product, index) => (
-            <ProductCard product={product} index={index} />
+          {currentProducts?.map((product, index) => (
+            <ProductCard key={product.id} product={product} index={index} />
           ))}
         </Grid>
       ) : (

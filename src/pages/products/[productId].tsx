@@ -8,9 +8,15 @@ import SingleProduct from "@/pages/components/single_product";
 
 const ProductDetail = () => {
   const router = useRouter();
-
+  const initialProduct: ProductProps = {
+    id: 0,
+    name: "",
+    price: 0,
+    image: "",
+    description: "",
+  };
   const { productId } = router.query;
-  const [product, setProduct] = useState<ProductProps>();
+  const [product, setProduct] = useState<ProductProps>(initialProduct);
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {

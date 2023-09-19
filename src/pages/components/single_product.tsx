@@ -10,6 +10,7 @@ import {
   Button,
   Paper,
   Grow,
+  CardMedia,
   Stack,
 } from "@mui/material";
 import { useRouter } from "next/router";
@@ -43,7 +44,7 @@ const SingleProduct = ({ product }: SingleProductProps) => {
               Catalog Products
             </Link>
 
-            <Typography color="text.primary">{product.name}</Typography>
+            <Typography color="text.primary">{product?.name}</Typography>
           </Breadcrumbs>
           <Card style={{ border: "2px solid #ccc", padding: "20px" }}>
             <CardContent>
@@ -51,14 +52,14 @@ const SingleProduct = ({ product }: SingleProductProps) => {
                 variant="h5"
                 sx={{ marginBottom: "8px", fontWeight: "bold" }}
               >
-                {product.name}
+                {product?.name}
               </Typography>
               <Typography
                 variant="h6"
                 color="#007bff"
                 sx={{ marginBottom: "12px" }}
               >
-                Price: ${product.price}
+                Price: ${product?.price}
               </Typography>
               <Stack alignItems="center">
                 <Box
@@ -70,10 +71,11 @@ const SingleProduct = ({ product }: SingleProductProps) => {
                     position: "relative",
                   }}
                 >
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    style={{
+                  <CardMedia
+                    component="img"
+                    image={product?.image}
+                    alt={product?.name}
+                    sx={{
                       objectFit: "contain",
                       width: "100%",
                       height: "100%",
@@ -85,7 +87,7 @@ const SingleProduct = ({ product }: SingleProductProps) => {
                 </Box>
               </Stack>
               <Typography mt={2} variant="body2" color="#555555">
-                {product.description}
+                {product?.description}
               </Typography>
             </CardContent>
           </Card>

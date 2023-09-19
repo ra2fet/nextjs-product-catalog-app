@@ -24,7 +24,7 @@ const NoProductFound = ({ isBack }: NoProductFound) => {
           variant="body1"
           style={{ color: "#555555", marginBottom: "20px" }}
         >
-          We couldn't find any products matching your search criteria.
+          {"We couldn't find any products matching your search criteria."}
         </Typography>
         {isBack && (
           <Button variant="outlined" onClick={goBack} color="primary">
