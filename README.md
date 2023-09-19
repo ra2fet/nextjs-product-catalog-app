@@ -20,8 +20,7 @@ A Next.js web application for browsing and exploring a product catalog. This pro
 
 | Catalog View | Product Details |
 |:------------:|:---------------:|
-| ![Screenshot 2023-09-19 at 09-04-34 Product Catalog App](https://github.com/ra2fet/nextjs-product-catalog-app/assets/9104379/7604db3d-552f-49dc-98e4-5c438af7432d) 
-| ![Screenshot 2023-09-19 at 08-41-30 Screenshot](https://github.com/ra2fet/nextjs-product-catalog-app/assets/9104379/cd60a876-aec5-4a8a-888c-2a85a60557a3) |
+| ![Screenshot 2023-09-19 at 09-04-34 Product Catalog App](https://github.com/ra2fet/nextjs-product-catalog-app/assets/9104379/7604db3d-552f-49dc-98e4-5c438af7432d) | ![Screenshot 2023-09-19 at 08-41-30 Screenshot](https://github.com/ra2fet/nextjs-product-catalog-app/assets/9104379/cd60a876-aec5-4a8a-888c-2a85a60557a3) |
 
 ## Getting Started
 
